@@ -14,6 +14,14 @@ convertBtn.addEventListener("click", function () {
   getLength(unit);
   getVolume(unit);
   getMass(unit);
+  inputText.value = "";
+});
+
+inputText.addEventListener("keyup", function () {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.querySelector("#convert-btn").click();
+  }
 });
 
 /*  1 meter = 3.281 ft
