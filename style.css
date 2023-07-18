@@ -17,6 +17,16 @@ body {
 h3 {
   color: #fff;
   font-size: 32px;
+  font-weight: 700;
+}
+
+#unit-header {
+  font-size: 18px;
+  color: rgb(20, 39, 116);
+}
+
+p {
+  font-size: 15px;
 }
 
 input {
@@ -67,5 +77,26 @@ button:hover {
   background: rgb(57, 57, 168);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: 1px solid black;
+}
+
+.result-container {
+  background: rgb(223, 223, 223);
+  height: 450px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.unit {
+  background: #fff;
+  width: 500px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
