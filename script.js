@@ -22,19 +22,25 @@ convertBtn.addEventListener("click", function () {
 */
 
 function getLength(unit) {
-  let totalFeet = unit * 3.281;
+  let totalFeet = unit * 3.28084;
+  totalFeet = totalFeet.toFixed(3);
   let totalMeters = unit * 0.3048;
+  totalMeters = totalMeters.toFixed(3);
   convertLength.textContent = `${unit} meters = ${totalFeet} feet | ${unit} feet = ${totalMeters} meters`;
 }
 
 function getVolume(unit) {
-  let totalGallons = unit * 0.264;
+  let totalGallons = unit * 0.264172;
+  totalGallons = totalGallons.toFixed(3);
   let totalLiters = unit * 3.78541;
+  totalLiters = totalLiters.toFixed(3);
   convertVolume.textContent = `${unit} liters = ${totalGallons} gallons | ${unit} gallons = ${totalLiters} liters`;
 }
 
 function getMass(unit) {
-  let totalPounds = unit * 2.204;
+  let totalPounds = unit * 2.20462;
+  totalPounds = totalPounds.toFixed(3);
   let totalKilos = unit * 0.453592;
+  totalKilos = totalKilos.toFixed(3);
   convertMass.textContent = `${unit} kilos = ${totalPounds} pounds | ${unit} pounds = ${totalKilos} kilos`;
 }
